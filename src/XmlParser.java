@@ -15,7 +15,8 @@ public class XmlParser {
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
         Document document = documentBuilder.parse("/Users/freehoon/Desktop/mega.xml");
 
-        Element root = document.getDocumentElement();
+        Element root = document.getDocumentElement();   //.getNodeName() 으로 최상위 노드를 가지고 올 수 있다.
+                                                        //여기서는 response가 최상위 노드이다
 
         NodeList childeren = root.getChildNodes();
         for(int i = 0; i < childeren.getLength() ; i++){
