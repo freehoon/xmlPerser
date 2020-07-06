@@ -11,7 +11,9 @@ import java.io.IOException;
 
 public class XmlParser {
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
-        DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+        Sample01 sample01 = new Sample01();
+        sample01.parser01();
+        /*DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
         Document document = documentBuilder.parse("/Users/freehoon/Desktop/mega.xml");
 
@@ -41,6 +43,6 @@ public class XmlParser {
                     }
                 }
             }
-        }
+        }//for*/
     }
 }
